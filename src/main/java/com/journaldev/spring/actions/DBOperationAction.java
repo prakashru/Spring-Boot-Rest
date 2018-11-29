@@ -17,7 +17,7 @@ public class DBOperationAction {
 		try {
 			// create our mysql database connection
 			String myDriver = "org.gjt.mm.mysql.Driver";
-			String myUrl = "jdbc:mysql://148.66.136.123/study_new";
+			String myUrl = "jdbc:mysql://localhost/study_new";
 
 			Class.forName(myDriver);
 			Connection conn = DriverManager.getConnection(myUrl, "study_db_user", "studydb!@#123");
