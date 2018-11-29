@@ -6,6 +6,16 @@ import org.springframework.stereotype.Component;
 public class Person {
 
 	private String name;
+	private char[] password;
+	
+
+	public char[] getPassword() {
+		return password;
+	}
+
+	public void setPassword(char[] password) {
+		this.password = password;
+	}
 
 	public String getName() {
 		return name;

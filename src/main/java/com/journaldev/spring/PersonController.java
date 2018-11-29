@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.journaldev.spring.actions.DBOperationAction;
+
 @RestController
 public class PersonController {
 
@@ -23,6 +25,15 @@ public class PersonController {
 		person.setName(name);
 		return person;
 	}
+	
+	@RequestMapping("/person/getall")
+	public Users getAllPerson() {
+		
+		DBOperationAction dbAction = new DBOperationAction();
+		Users user = DBOperationAction.getAllUsers();
+		return user;
+	}
+
 	
 //	@RequestMapping(value="/person/update", method=RequestMethod.POST)
 //	public Person updatePerson(@RequestParam(name="name", required=true) String name) {
