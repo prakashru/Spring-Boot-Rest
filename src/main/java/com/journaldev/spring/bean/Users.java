@@ -1,6 +1,8 @@
-package com.journaldev.spring;
+package com.journaldev.spring.bean;
 
 import java.util.List;
+
+import com.journaldev.spring.Person;
 
 public class Users {
 	
