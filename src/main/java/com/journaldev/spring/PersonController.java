@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.journaldev.spring.actions.DBOperationAction;
+import com.journaldev.spring.bean.Users;
 
 @RestController
 public class PersonController {
